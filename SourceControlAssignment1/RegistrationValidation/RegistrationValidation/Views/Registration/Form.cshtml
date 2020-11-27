@@ -1,0 +1,163 @@
+﻿@model RegistrationValidation.Models.tbl_user
+
+@{
+        ViewBag.Title = "Registration";
+    }
+@{
+    Layout = "";
+}
+
+<html>
+<head>
+    <title>Registration</title>
+
+    <link href="~/Content/bootstrap.css" rel=" stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel=" stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <style>
+        
+        
+        #box {
+            border: 1px solid black;
+            height: 100%;
+        }
+
+        #main-div {
+            height: 900px;
+            
+            background: url('../../Content/img/eberhard-grossgasteiger-XLIKVFCGpBw-unsplash.jpg') 50% 0 no-repeat fixed;
+            background-size: 100% 100%;
+        }
+
+        /*bos inside design*/
+        .insidebox {
+            border: 1px solid black;
+            margin: 5% auto 10% auto;
+            max-width: 500px;
+            min-width: 200px;
+            padding-left: 60px;
+            padding-right: 60px;
+            border-radius: 10px;
+            background-color: rgba(255,0,0,0.3);
+        }
+        /*header*/
+        div h2 {
+            text-align: center;
+            font-size: 24px;
+            padding:10px;
+            color:white;
+        }
+        /*span tag*/ 
+        .text{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-div">
+        <div id="box" class="img-responsive">
+            @using (Html.BeginForm("Form", "Registration", FormMethod.Post))
+            {
+            <div class="insidebox">
+                <div>
+                    <h2>Registration</h2>
+
+                </div>
+
+                <!--Username-->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                        @Html.TextBoxFor(x => x.User_Name, new { @class = "form-control", @placeholder = "Name" })
+
+                    </div>
+                    <span style="color:white"> @Html.ValidationMessageFor(x => x.User_Name)</span>
+                </div>
+
+                <!--Address-->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        @Html.TextAreaFor(x => x.User_Address, new { @class = "form-control", @placeholder = "Address" })
+
+                    </div>
+                    <span style="color:white"> @Html.ValidationMessageFor(x => x.User_Address)</span>
+                </div>
+
+
+
+                <!--Password-->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i> </div>
+                        @Html.PasswordFor(x => x.password, new { @class = "form-control", @placeholder = "Password" })
+
+                    </div>
+                    <span style="color:white"> @Html.ValidationMessageFor(model => model.password)</span>
+                </div>
+
+                <!--Contact Number-->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                        @Html.TextBoxFor(x => x.User_mobile, new { @class = "form-control", @placeholder = "Mobile" })
+
+                    </div>
+                    <span style="color:white">@Html.ValidationMessageFor(model => model.User_mobile)</span>
+                </div>
+
+                <!--Email-->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        @Html.TextBoxFor(x => x.User_Email, new { @class = "form-control", @placeholder = "Email" })
+
+                    </div>
+                    <span style="color:white"> @Html.ValidationMessageFor(x => x.User_Email)</span>
+                </div>
+
+                <!--Date of Birth-->
+                <div class="form-group">
+                    <span class="text">Date of Birth</span>
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                        @Html.TextBoxFor(x => x.User_birthday, new { @class = "form-control", @placeholder = "dd/MM/yyyy    " })
+                    </div>
+                    <span style="color:white"> @Html.ValidationMessageFor(x => x.User_birthday)</span>
+                </div>
+
+                <!--Gender-->
+                <div class="form-group">
+                    <span class="text">Gender</span>
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+
+                        @Html.DropDownListFor(m => m.User_Gender, new List<SelectListItem>
+                { new SelectListItem{Text="Male", Value="M"},
+                  new SelectListItem{Text="Female", Value="F"}}, "Please select")
+
+                    </div>
+                    <span style="color:white"> @Html.ValidationMessageFor(x => x.User_Email)</span>
+                </div>
+
+                <!--Reset Ann Sumbit button-->
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-success bottom-left" />
+                    <input type="reset" value="Reset" class="btn btn-danger bottom-right" />
+                </div>
+            </div>
+
+            }
+        </div>
+        </div>
+
+</body>
+</html>
+<script src="~/Scripts/jquery.validate-vsdoc.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UserDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_user">
+    <Key>
+      <PropertyRef Name="User_id" />
+    </Key>
+    <Property Name="User_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_Name" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_Address" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="User_Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_birthday" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_Gender" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+    <Property Name="User_mobile" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="UserDBModelStoreContainer">
+    <EntitySet Name="tbl_user" EntityType="Self.tbl_user" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
