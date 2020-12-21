@@ -1,0 +1,114 @@
+﻿@model SourceControlAssignment.Models.Person
+@{
+    Layout = "";
+}
+
+
+<html>
+<head>
+    <title>Login</title>
+
+    <script src="~/Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <link href="~/Content/bootstrap.css" rel=" stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel=" stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <style>
+
+
+        #box {
+           
+            height:100%
+        }
+
+        #main-div {
+            height: 80vh;
+         
+        }
+
+        /*bos inside design*/
+        .insidebox {
+            border: 1px solid black;
+            margin: 5% auto 10% auto;
+            max-width: 500px;
+            min-width: 200px;
+            padding-left: 60px;
+            padding-right: 60px;
+            border-radius: 10px;
+            background-color: rgba(255,0,0,0.3);
+        }
+        /*header*/
+        div h2 {
+            text-align: center;
+            font-size: 24px;
+            padding: 10px;
+            color: white;
+        }
+        /*span tag*/
+        .text {
+            color: white;
+        }
+        #Registration-link {
+            margin-top: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-div">
+        <div id="box" class="img-responsive">
+            @using (Html.BeginForm())
+            {
+            <div class="insidebox">
+                <div>
+                    <h2>Login</h2>
+
+                </div>
+
+
+
+                <!--Email-->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        @Html.TextBoxFor(x => x.Email, new { @class = "form-control", @placeholder = "Email" })
+
+                    </div>
+                    <span style="color:white"> @Html.ValidationMessageFor(x => x.Email)</span>
+                </div>
+
+                <!--Password-->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i> </div>
+                        @Html.PasswordFor(x => x.Password, new { @class = "form-control", @placeholder = "Password" })
+
+                    </div>
+                    <span style="color:white"> @Html.ValidationMessageFor(model => model.Password)</span>
+                </div>
+
+                <!--Validtion Summary-->
+                <p>
+                    @Html.ValidationSummary(false, "")
+                </p>
+
+                <!--Reset Ann Sumbit button-->
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-success bottom-left" />
+                    <input type="reset" value="Reset" class="btn btn-danger bottom-right" />
+
+                    <!--Registration Link-->
+                    <div id="Registration-link">
+                        @Html.ActionLink("Click here for Registration", "RegistrationForm")
+                    </div>
+                </div>
+            </div>
+
+            }
+        </div>
+    </div>
+
+</body>
+</html>

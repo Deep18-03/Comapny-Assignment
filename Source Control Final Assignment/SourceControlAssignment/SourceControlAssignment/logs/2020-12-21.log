@@ -1,0 +1,75 @@
+2020-12-21 10:11:13.8299 INFO Entering the login Controller. Login method
+2020-12-21 10:11:13.8813 INFO Entering the login controller
+2020-12-21 10:11:17.1786 INFO Exit login controller.Login success! 21-12-2020 10:11:17
+2020-12-21 10:11:17.1864 INFO Entering the login success
+2020-12-21 10:27:42.6276 INFO Entering the login Controller. Login method
+2020-12-21 10:27:42.6555 INFO Entering the login controller
+2020-12-21 10:27:44.0345 INFO Exit login controller.Login success! 21-12-2020 10:27:44
+2020-12-21 10:27:44.0345 INFO Entering the login success
+2020-12-21 10:31:38.0631 INFO Entering the login Controller. Login method
+2020-12-21 10:31:38.3133 INFO Entering the login controller
+2020-12-21 10:31:39.5492 INFO Exit login controller.Login success! 21-12-2020 10:31:39
+2020-12-21 10:31:39.5492 INFO Entering the login success
+2020-12-21 10:35:17.9530 INFO Entering the login Controller. Login method
+2020-12-21 10:35:18.1676 INFO Entering the login controller
+2020-12-21 10:35:19.3361 INFO Exit login controller.Login success! 21-12-2020 10:35:19
+2020-12-21 10:35:19.3408 INFO Entering the login success
+2020-12-21 10:36:07.8765 INFO Entering the login Controller. Login method
+2020-12-21 10:36:07.8765 INFO Entering the login controller
+2020-12-21 10:36:07.8871 INFO Exit login controller.Login Failure:-( 21-12-2020 10:36:07
+2020-12-21 10:36:07.8871 INFO Entering the login success
+2020-12-21 10:36:10.5004 INFO Entering the login Controller. Login method
+2020-12-21 10:36:10.5004 INFO Entering the login controller
+2020-12-21 10:36:10.5004 INFO Exit login controller.Login Failure:-( 21-12-2020 10:36:10
+2020-12-21 10:36:10.5094 INFO Entering the login success
+2020-12-21 10:36:12.9086 INFO Entering the login Controller. Login method
+2020-12-21 10:36:12.9086 INFO Entering the login controller
+2020-12-21 10:36:12.9157 INFO Exit login controller.Login Failure:-( 21-12-2020 10:36:12
+2020-12-21 10:36:12.9157 INFO Entering the login success
+2020-12-21 10:36:29.9406 INFO Entering the login Controller. Login method
+2020-12-21 10:36:29.9406 INFO Entering the login controller
+2020-12-21 10:36:29.9486 INFO Exit login controller.Login Failure:-( 21-12-2020 10:36:29
+2020-12-21 10:36:29.9486 INFO Entering the login success
+2020-12-21 10:36:39.4492 INFO Entering the login Controller. Login method
+2020-12-21 10:36:39.4492 INFO Entering the login controller
+2020-12-21 10:36:39.4492 INFO Exit login controller.Login Failure:-( 21-12-2020 10:36:39
+2020-12-21 10:36:39.4492 INFO Entering the login success
+2020-12-21 10:36:42.0901 INFO Entering the login Controller. Login method
+2020-12-21 10:36:42.0901 INFO Entering the login controller
+2020-12-21 10:36:42.0901 INFO Exit login controller.Login Failure:-( 21-12-2020 10:36:42
+2020-12-21 10:36:42.0901 INFO Entering the login success
+2020-12-21 10:37:04.4626 INFO Entering the login Controller. Login method
+2020-12-21 10:37:04.4626 INFO Entering the login controller
+2020-12-21 10:37:04.4626 INFO Exit login controller.Login success! 21-12-2020 10:37:04
+2020-12-21 10:37:04.4626 INFO Entering the login success
+2020-12-21 10:38:47.4171 INFO Entering the login Controller. Login method
+2020-12-21 10:38:48.7426 INFO Exit login controller.Login Failure:-( 21-12-2020 10:38:48
+2020-12-21 10:38:48.7496 INFO Entering the login Failure:-(
+2020-12-21 10:40:29.4881 INFO Entering the login Controller. Login method
+2020-12-21 10:40:30.9435 INFO Exit login controller.Login success! 21-12-2020 10:40:30
+2020-12-21 10:40:30.9489 INFO  Login success
+2020-12-21 10:41:54.0836 INFO Entering the login Controller. Login method
+2020-12-21 10:41:55.5269 INFO Exit login controller.Login success! 21-12-2020 10:41:55
+2020-12-21 10:41:55.5269 INFO  Login success
+2020-12-21 11:12:19.5350 INFO Entering the login Controller. Login method
+2020-12-21 11:12:21.0168 INFO Exit login controller.Login success! 21-12-2020 11:12:21
+2020-12-21 11:12:21.0168 INFO Login Successffuly
+2020-12-21 11:14:04.9535 INFO Entering the login Controller. Login method
+2020-12-21 11:14:06.1658 INFO Exit login controller.Login Failure:-( 21-12-2020 11:14:06
+2020-12-21 11:14:06.1658 INFO Login Failure:-(
+2020-12-21 11:14:18.5385 INFO Entering the login Controller. Login method
+2020-12-21 11:14:18.5714 INFO Exit login controller.Login success! 21-12-2020 11:14:18
+2020-12-21 11:14:18.5723 INFO Login Successffuly
+2020-12-21 11:14:20.2526 INFO Logout Successffuly21-12-2020 11:14:20
+2020-12-21 11:14:20.2526 INFO Logout Successffuly
+2020-12-21 11:26:32.6540 INFO Entering the login Controller. Login method
+2020-12-21 11:26:34.3510 INFO Exit login controller.Login success! 21-12-2020 11:26:34
+2020-12-21 11:26:34.3530 INFO Login Successffuly
+2020-12-21 11:26:38.7581 INFO Logout Successffuly21-12-2020 11:26:38
+2020-12-21 11:26:38.7591 INFO Logout Successffuly
+2020-12-21 11:29:09.9695 INFO Entering the login Controller. Login method
+2020-12-21 11:29:11.2315 INFO Exit login controller.Login success! 21-12-2020 11:29:11
+2020-12-21 11:29:11.2315 INFO Login Successffuly
+2020-12-21 14:30:38.3097 INFO Entering the login Controller. Login method
+2020-12-21 14:30:38.5057 INFO Exit login controller.Login success! 21-12-2020 14:30:38
+2020-12-21 14:30:38.5057 INFO Login Successfully

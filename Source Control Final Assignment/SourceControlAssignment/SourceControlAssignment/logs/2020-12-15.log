@@ -1,0 +1,10 @@
+2020-12-15 10:06:29.7215 INFO Entering the login Controller. Login method
+2020-12-15 10:06:30.4521 ERROR Exception!The type 'Edm.Int32' of the member 'Confirm_Password' in the conceptual side type 'UserModel.Person' does not match with the type 'System.String' of the member 'Confirm_Password' on the object side type 'SourceControlAssignment.Models.Person'.
+2020-12-15 10:09:52.9476 INFO Entering the login Controller. Login method
+2020-12-15 10:09:54.1167 INFO Entering the login Controller. Login method
+2020-12-15 10:09:54.2294 ERROR Exception!The type 'Edm.Int32' of the member 'Confirm_Password' in the conceptual side type 'UserModel.Person' does not match with the type 'System.String' of the member 'Confirm_Password' on the object side type 'SourceControlAssignment.Models.Person'.
+2020-12-15 10:09:54.2553 ERROR Exception!The type 'Edm.Int32' of the member 'Confirm_Password' in the conceptual side type 'UserModel.Person' does not match with the type 'System.String' of the member 'Confirm_Password' on the object side type 'SourceControlAssignment.Models.Person'.
+2020-12-15 10:10:41.9071 INFO Entering the login Controller. Login method
+2020-12-15 10:10:42.4921 ERROR Exception!The type 'Edm.Int32' of the member 'Confirm_Password' in the conceptual side type 'UserModel.Person' does not match with the type 'System.String' of the member 'Confirm_Password' on the object side type 'SourceControlAssignment.Models.Person'.
+2020-12-15 10:19:07.1462 INFO Entering the login Controller. Login method
+2020-12-15 10:19:07.6774 ERROR Exception!The type 'Edm.Int32' of the member 'Confirm_Password' in the conceptual side type 'UserModel.Person' does not match with the type 'System.String' of the member 'Confirm_Password' on the object side type 'SourceControlAssignment.Models.Person'.

@@ -1,0 +1,106 @@
+﻿@model SourceControlAssignment.Models.ViewUser
+@{
+    //ViewBag.Title = "Dasboard";
+    Layout = "";
+
+}
+
+<html>
+<head>
+    <title>
+
+    </title>
+    <link href="~/Content/bootstrap.css" rel=" stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel=" stylesheet" />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /*align-items:center;*/
+            user-select: none;
+        }
+
+        .content-box-lg {
+            border: 2px solid black;
+            padding: 30px;
+            margin: 30px;
+        }
+
+        .Detail-center {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Profile</h1>
+    </header>
+
+    <div class="content-box-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 Detail-center">
+                    <p>FirstName:</p>
+                    <hr />
+                    <p>LastName:</p>
+                    <hr />
+                    <p>Email:</p>
+                    <hr />
+                    <p>Contact No:</p>
+                    <hr />
+                    <p>Age:</p>
+                    <hr />
+                    <p>Address:</p>
+                    <hr />
+                    <p>City:</p>
+                    <hr />
+                    <p>State:</p>
+                    <hr />
+                    <p>Image:</p>
+                </div>
+                <div class="col-md-6">
+                    <p>@Model.FirstName</p>
+                    <hr />
+                    <p>@Model.LastName</p>
+                    <hr />
+                    <p>@Model.Email</p>
+                    <hr />
+                    <p>@Model.MobileNo</p>
+                    <hr />
+                    <p>@Model.Age</p>
+                    <hr />
+                    <p>@Model.Address</p>
+                    <hr />
+                    <p>@Model.City</p>
+                    <hr />
+                    <p>@Model.State</p>
+                    <hr />
+                    <p><img src="@Url.Content(@Model.image)" style="width:200px; height:200px;" /></p>
+
+                </div>
+
+            </div>
+
+            <!--Logout Button-->
+            <div class="logout"> <i class="fa fa-sign-out" aria-hidden="true"></i><input type="button" class="btn btn-general" value="Logout" onclick="location.href='@Url.Action("Logout","User")'" /></div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
