@@ -1,0 +1,144 @@
+﻿body {
+    background-color: #FFFFFF;
+}
+
+/* =========================================
+                        Navigation
+        ============================================ */
+a:hover {
+    background: none;
+}
+
+.Search {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 11px;
+}
+
+
+.site-nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-brand {
+    padding: 13px 15px;
+    font-weight: 600;
+}
+
+/* White Navigation */
+
+.white-nav-top {
+    background: #fff;
+    padding: 5px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+
+.nav > li > a.logout-link:hover {
+    background: none;
+}
+
+.Sorting {
+    margin-top: 10px;
+    float: right
+}
+
+#Heading {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    float: right;
+    margin-right: 30px;
+}
+
+
+/*Product list*/
+#Product-list {
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+
+.product-item {
+    overflow: hidden;
+    position: relative;
+
+}
+
+    .product-item img {
+        width: 100%;
+        height: 400px;
+        transition: transform .5s ease;
+    }
+
+    .product-item:hover img {
+        transform: scale(1.1);
+    }
+
+.product-item-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14,14,17,0.9);
+    cursor: zoom-in;
+    opacity: 0;
+}
+
+.product-item-details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: all 0.8s ease;
+}
+
+    .product-item-details h3 a {
+        color: #f4c613;
+        text-transform: uppercase;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+
+    .product-item-details #line {
+        display: inline-block;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        height: 6px;
+        width: 30px;
+        margin: 3px auto 5px auto;
+    }
+
+    .product-item-details p {
+        font-size: 17px;
+        color: white;
+        text-transform: capitalize;
+        margin: 0;
+        padding: 0;
+        transform: translateY(20%);
+        transition: all 0.8s;
+    }
+
+.product-item:hover .product-item-details h3 a:hover {
+    color: #E0E0E0;
+    transform: translateY(0px);
+}
+
+.product-item:hover .product-item-details p {
+    transform: translateY(0px);
+}
+
+.product-item:hover .product-item-overlay {
+    opacity: 0.9;
+}
+

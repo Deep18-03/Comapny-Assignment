@@ -1,0 +1,146 @@
+﻿@model WebApplication1.Models.tbl_admin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <script src="~/Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+    <!--Custom Css-->
+
+    <link href="~/Style/RegistrationForm.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="main-div">
+        <div id="box" class="img-responsive">
+            @using (Html.BeginForm())
+            {
+
+                <div class="insidebox">
+
+                    <h3>Create an Account</h3>
+                    <p id="Subtitle">Enter your details to sign-up</p>
+
+                    <!--FirstName field-->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                            @Html.TextBoxFor(x=>x.FirstName, new { @class = "form-control", @placeholder = "FirstName" })
+
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.FirstName)</span>
+                    </div>
+
+                    <!--LastName field-->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                            @Html.TextBoxFor(x => x.LastName, new { @class = "form-control", @placeholder = "LastName" })
+
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.LastName)</span>
+                    </div>
+
+                    <!--Email field-->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control", @placeholder = "Email" })
+
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.Email)</span>
+                    </div>
+
+                    <!--UserName field-->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                            @Html.TextBoxFor(x => x.Username, new { @class = "form-control", @placeholder = "Username" })
+
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.Username)</span>
+                    </div>
+
+                    <!--Password field-->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span> </div>
+                            @Html.PasswordFor(x => x.password, new { @class = "form-control", @placeholder = "Password" })
+                            <span id="eye-password" toggle="#password" class="fa fa-eye  field-icon toggle-password"></span>
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.password)</span>
+                    </div>
+
+
+                    <!--ConfirmPassword field-->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span> </div>
+                            @Html.PasswordFor(x => x.ConfirmPassword, new { @class = "form-control", @placeholder = "Confirm-Password" })
+
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.ConfirmPassword)</span>
+                    </div>
+
+                    <!--Submit and Reset field-->
+                    <div class="form-group">
+                        <input type="submit" value="Sign Up" class="btn btn-success bottom-left" />
+                        <input type="reset" value="Reset" class="btn btn-danger bottom-right" />
+                    </div>
+
+                    <div class="form-group">
+                        <p style=" color:#800000 ">@ViewBag.error</p>
+                    </div>
+
+                    <!-- Registration Page Link-->
+                    <p>
+                        Already have an account? @Html.ActionLink("Sign In", "login", null, new { @class = "login-link" })
+                    </p>
+                    
+                    <div>@ViewBag.Message</div>
+
+                    <!--Validation Summary-->
+                    @Html.ValidationSummary(false,"")
+
+                </div>
+            }
+        </div>
+    </div>
+
+
+    <!--Provide functionality to Show and Hide password-->
+    <script>
+        $(".toggle-password").click(function () {
+
+            $(this).toggleClass("fa-eye-slash fa-eye");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+

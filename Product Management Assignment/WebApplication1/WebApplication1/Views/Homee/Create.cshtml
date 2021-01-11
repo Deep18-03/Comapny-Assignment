@@ -1,0 +1,154 @@
+﻿@model WebApplication1.Models.Product
+@{
+    Layout = null;
+    <!--User Must login to accsess this view-->
+    <!--Redirect to Login Page-->
+    if (Session["ad_id"] == null)
+    {
+        Response.Redirect("~/Admin/login");
+    }
+}
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <script src="~/Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+    <!--Custom Css-->
+
+    <link href="~/Style/RegistrationForm.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="main-div">
+        <div id="box" class="img-responsive">
+            @using (Html.BeginForm("Create", "Homee", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+
+                <div class="insidebox">
+
+                    <h3>Add Product</h3>
+                    <p id="Subtitle">Enter details</p>
+
+                    <!--Name Textbox-->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-circle" aria-hidden="true"></i></div>
+                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control", @placeholder = "Product Name" })
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.Name)</span>
+                    </div>
+
+                    <!--Dynamic DropDown menu For Categories-->
+                    <div class="form-group">
+                        <div>
+
+                            @Html.DropDownListFor(x => x.Category, ViewBag.CategoryList as SelectList, "--Select Categories--", new { @class = "form-control" })
+
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.Category)</span>
+                    </div>
+
+                    <!--Price Textbox-->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-circle" aria-hidden="true"></i></div>
+                            @Html.TextBoxFor(x => x.Price, new { @class = "form-control", @placeholder = "Price" })
+
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.Price)</span>
+                    </div>
+
+                    <!--Quantity-->
+                    <div class="form-group">
+                        Quantity
+                        <div class="input-group">
+
+                            @Html.DropDownListFor(m => m.Quantity, Enumerable.Range(1, 10).Select(i => new SelectListItem { Text = i.ToString(), Value = i.ToString() }))
+
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.Quantity)</span>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group" style="width:100%" ;>
+                            @Html.TextAreaFor(x => x.ShortDescription, new { @class = "form-control", @placeholder = "Short Description" })
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.ShortDescription)</span>
+                    </div>
+
+
+                    <!--Description-->
+                    <div class="form-group">
+                        <div class="input-group" style="width:100%" ;>
+
+                            @Html.TextAreaFor(x => x.Description, new { @class = "form-control", @placeholder = "Description" })
+
+                        </div>
+                        <span style="color:#800000 "> @Html.ValidationMessageFor(x => x.Description)</span>
+                    </div>
+
+                    <!--Image Upload-->
+                    <div class="form-group">
+                        <span>Add Image</span>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-circle" aria-hidden="true"></i></div>
+                            <input type="file" name="imgfile" id="imgfile" class="form-control" required="required" />
+                        </div>
+
+                    </div>
+
+                    <!--Submit and Reset field-->
+                    <div class="form-group">
+                        <input type="submit" value="Add" class="btn btn-success bottom-left" />
+                        <input type="reset" value="Cancel" class="btn btn-danger bottom-right" />
+                    </div>
+
+                    <div class="form-group">
+                        <p style=" color:#800000 ">@ViewBag.error</p>
+                    </div>
+
+
+
+
+                </div>
+            }
+        </div>
+    </div>
+
+
+
+    <!--Provide functionality to Show and Hide password-->
+    <script>
+        $(".toggle-password").click(function () {
+
+            $(this).toggleClass("fa-eye-slash fa-eye");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+

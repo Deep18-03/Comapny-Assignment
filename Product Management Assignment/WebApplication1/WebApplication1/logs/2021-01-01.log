@@ -1,0 +1,35 @@
+2021-01-01 15:29:17.7553 INFO Entering the login Controller. Login method
+2021-01-01 15:29:17.8326 INFO Exit login controller.Login success! 01-01-2021 15:29:17
+2021-01-01 21:42:41.0014 INFO Entering the login Controller. Login method
+2021-01-01 21:42:41.0273 INFO Exit login controller.Login success! 01-01-2021 21:42:41
+2021-01-01 21:42:41.3364 INFO Exit login controller.Login success! 01-01-2021 21:42:41
+2021-01-01 21:42:41.3364 INFO Login Successfully
+2021-01-01 21:43:39.9223 INFO Entering the login Controller. Login method
+2021-01-01 21:43:39.9223 INFO Exit login controller.Login success! 01-01-2021 21:43:39
+2021-01-01 21:43:39.9223 INFO Login Failure:-(
+2021-01-01 21:43:39.9303 INFO Exit login controller.Login Failure:-( 01-01-2021 21:43:39
+2021-01-01 21:43:45.6871 INFO Entering the login Controller. Login method
+2021-01-01 21:43:45.6871 INFO Exit login controller.Login success! 01-01-2021 21:43:45
+2021-01-01 21:43:45.6871 INFO Exit login controller.Login success! 01-01-2021 21:43:45
+2021-01-01 21:43:45.6871 INFO Login Successfully
+2021-01-01 21:51:57.3182 INFO Entering the login Controller. Login method
+2021-01-01 21:51:57.6100 INFO Login Failure:-(
+2021-01-01 21:51:57.6339 INFO Exit login controller.Login Failure:-( 01-01-2021 21:51:57
+2021-01-01 21:52:14.0393 INFO Entering the login Controller. Login method
+2021-01-01 21:52:14.0393 INFO Login Failure:-(
+2021-01-01 21:52:14.0393 INFO Exit login controller.Login Failure:-( 01-01-2021 21:52:14
+2021-01-01 21:52:25.3751 INFO Entering the login Controller. Login method
+2021-01-01 21:52:25.3751 INFO Login Failure:-(
+2021-01-01 21:52:25.3751 INFO Exit login controller.Login Failure:-( 01-01-2021 21:52:25
+2021-01-01 21:52:32.5670 INFO Entering the login Controller. Login method
+2021-01-01 21:52:32.5750 INFO Exit login controller.Login success! 01-01-2021 21:52:32
+2021-01-01 21:52:32.5750 INFO Login Successfully
+2021-01-01 21:53:29.8547 INFO Entering the login Controller. Login method
+2021-01-01 21:53:30.0973 INFO Exit login controller.Login success! 01-01-2021 21:53:30
+2021-01-01 21:53:30.0973 INFO Login Successfully
+2021-01-01 21:56:01.6081 INFO Entering the login Controller. Login method
+2021-01-01 21:56:01.8224 INFO Exit login controller.Login success! 01-01-2021 21:56:01
+2021-01-01 21:56:01.8224 INFO Login Successfully
+2021-01-01 21:57:33.4025 INFO Entering the login Controller. Login method
+2021-01-01 21:57:33.9772 INFO Exit login controller.Login success! 01-01-2021 21:57:33
+2021-01-01 21:57:33.9772 INFO Login Successfully

@@ -1,0 +1,87 @@
+﻿
+body {
+    background-color: whitesmoke;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    font-size: 15px;
+}
+
+.logout {
+    float: right;
+}
+
+    .logout:hover {
+        transform: translateY(-2px);
+    }
+
+.trasparent-nav {
+    margin: 15px 10px 0px 150px;
+}
+
+.Side-Menu {
+    height: 100%;
+    width: 170px;
+    position: fixed; /*  (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at top */
+    left: 0;
+    background-color: #404040;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    /*margin-top:25px;*/
+}
+
+    .Side-Menu a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+    }
+
+        .Side-Menu a:hover {
+            color: #f1f1f1;
+            transform: translateY(-2px);
+        }
+
+.container {
+    margin: 50px 0px 0px 170px;
+    width: 80%;
+}
+
+#Welcome-Message {
+    display: flex;
+    justify-content: center;
+}
+
+.Welcome h1 {
+    font-size: 6rem;
+}
+
+.Name {
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+
+.container-footer {
+    margin: 0px 0px 0px 170px;
+}
+
+footer {
+    /*background: #ffffff;*/
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+    footer p {
+        color: #333333;
+        line-height: 20px;
+        margin: 0;
+    }
+

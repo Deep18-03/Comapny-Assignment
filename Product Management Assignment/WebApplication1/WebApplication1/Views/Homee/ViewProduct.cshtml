@@ -1,0 +1,177 @@
+﻿@using PagedList.Mvc
+@model PagedList.IPagedList<WebApplication1.Models.Product>
+
+@{ Layout = null;
+    <!--User Must login to accsess this view-->
+    <!--Redirect to Login Page-->
+    if (Session["ad_id"] == null)
+    {
+        Response.Redirect("~/Admin/login");
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View Product</title>
+    <link href="~/Content/paginition.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+    <!--Custom Css-->
+    <link href="~/Style/ViewProduct.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <style>
+      
+        .box-2 {
+            margin-bottom:10px;
+            padding:20px;
+            border: 2px solid black;
+        }
+        .delete-detail{
+            margin-bottom:5px;
+        }
+        .delete-button{
+            width:20%;
+        }
+        .delete-link{
+            color:#333;
+        }
+        .delete-link:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!--Navaigation  bar-->
+        <nav class="navbar navbar-fixed-top white-nav-top">
+            <div class="container-fluid">
+                <div class="site-nav-wrapper">
+                    <div class="navbar-header">
+                        <!--Link (Redirect to Home view)-->
+                        <a class="navbar-brand" href="@Url.Action("Home","Homee")">Home</a>
+
+                        <!--Link (Redirect to AddProduct view)-->
+                        <a class="navbar-brand" href="@Url.Action("Create","Homee")">AddProduct</a>
+                    </div>
+
+                    <div class="container">
+                        <div class="collapse navbar-collapse d">
+                            <ul class="nav navbar-nav pull-right">
+                                <!--Search Product Field-->
+                                <li>
+                                    <div class="Search">
+                                        @using (@Html.BeginForm("ViewProduct", "Homee"))
+                                        {
+                                            <input type="text" placeholder="Search" name="search" id="search">
+                                            <button type="submit">Search</button>
+                                        }
+                                    </div>
+                                </li>
+
+                                <!--Logout-->
+                                <li> <a class="logout-link" href="@Url.Action("Logout","Admin")"> <i style="font-size:20px;" class="fa fa-power-off fa-2x" aria-hidden="true"></i> Logout</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="box" style="height:auto; ">
+
+        <h1 id="Heading">Product List</h1>
+        <!--Sorting Field-->
+        <section class="Sorting">
+            <span>Sort By:</span>
+            @Html.ActionLink("Category", "ViewProduct", new { sortBy = ViewBag.CategorySort })
+
+            <span>Or</span>
+            @Html.ActionLink("Name", "ViewProduct", new { sortBy = ViewBag.NameSort })
+        </section>
+
+        <!--Product list will shown-->
+        <section id="Product-list">
+            <div class="content-box-md">
+                <div id="Product-wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div id="isotope-container">
+                                @if (Model != null)
+                                {
+                                    foreach (var item in Model)
+                                    {
+                                        <div class="col-md-4" col-sm-6>
+                                            <div class="box-2">
+                                              
+                                               
+                                                <div class="product-item">
+
+                                                    <a>
+                                                        <!--Image Of product-->
+                                                        <img src="@Url.Content(item.Image)" alt="No image" class="img-responsive" />
+
+                                                        <div class="product-item-overlay">
+                                                            <div class="product-item-details text-center">
+
+                                                                <!--Product Name having link which Redirect to Product Details-->
+                                                                <h3>@Html.ActionLink(@item.Name, "ViewDetails", new { id = item.pro_id })</h3>
+
+                                                                <!-- item strips -->
+                                                                <span id="line"></span>
+
+                                                                <!-- item description -->
+                                                                <p><span style="color:yellow;">Category Name:</span> @item.Category</p>
+                                                                <p><span style="color:yellow;">Price:</span>  @item.Price ₹</p>
+                                                                <p><span style="color:yellow;">Short Description:</span>  @item.ShortDescription</p>
+
+
+
+
+
+
+                                                                <!--Delete Button to delete product-->
+                                                                <div style="margin-top:10px;">
+                                                                    @Html.ActionLink("Delete", "Delete", new { id = item.pro_id }, new { @class = "btn btn-danger btn-sm" })
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    
+
+    <!--Pagination-->
+    <div id="container" style="margin-left: 20px">
+        <p></p>
+        <p></p>
+        <div class="pagination" style="margin-left: 400px">
+            @Html.PagedListPager(Model, page => Url.Action("ViewProduct", new { page }))
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿@{ Layout = null;
+
+    <!--User Must login to accsess this view-->
+    <!--Redirect to Login Page-->
+    if (Session["ad_id"] == null)
+    {
+        Response.Redirect("~/Admin/login");
+    }
+}
+
+<html>
+<head>
+    <title>Home</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+    <!--Custom Css-->
+    <link href="~/Style/Home.css" rel="stylesheet" />
+</head>
+<body style="background-color: whitesmoke;">
+    <header>
+        <!--Navaigation  bar-->
+        <nav class="navbar navbar-fixed-top trasparent-nav">
+            <div class="container-fluid">
+                <ul class="nav">
+                    <li><div class="logout" onclick="location.href='@Url.Action("Logout","Admin")'"> <i style="font-size:20px;" class="fa fa-power-off fa-2x" aria-hidden="true"></i><input class="logout-button" type="button" value="Logout" /></div></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="Side-Menu">
+
+        <!-- Side navigation -->
+        <div>
+            <a href="@Url.Action("Create","Homee")"><i class="fa fa-plus" aria-hidden="true"></i> Add Product</a>
+            <br />
+
+            <a href="@Url.Action("ViewProduct","Homee")"><i class="fa fa-list" aria-hidden="true"></i> Product List</a>
+        </div>
+    </section>
+
+    <!--Main Content-->
+    <div class="container">
+        <section id="Welcome-Message">
+            <!--Welcome message for User-->
+            <div class="Welcome">
+                <h1>W<span style="font-size:40px;">ELCOME:</span><span class="Name">@Session["FirstName"]</span> <span class="Name">@Session["LastName"]</span></h1>
+            </div>
+        </section>
+
+        <!--Looged in User detail-->
+        <section>
+            <div class="logged_in">
+                Mail id:@Session["Email"]
+                <br>
+                User Name:<span style="text-transform:capitalize">@Session["Username"]</span>
+            </div>
+        </section>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="text-left">
+        <div class="container-footer">
+            <hr />
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Copyright &copy; All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

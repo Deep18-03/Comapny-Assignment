@@ -1,0 +1,43 @@
+﻿#box {
+    height: 100%;
+}
+body{
+    background:none;
+    background-color:whitesmoke;
+}
+#main-div {
+    height: 100%;
+}
+
+.insidebox {
+    border: 1px solid black;
+    margin: 3% auto 10% auto;
+    max-width: 500px;
+    min-width: 200px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 10px;
+    background-color: rgb(128, 128, 128);
+}
+
+div h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.downmenu {
+    display: inline-block;
+}
+
+div h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#Subtitle {
+    font-size: 15px;
+    font-weight: 200;
+    color: #fff;
+}
