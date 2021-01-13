@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbHMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Hotel">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HotelName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PinCode" Type="Int32" />
+    <Property Name="ContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ContactPerson" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Rooms" Relationship="dbHMSModel.FK__Room__HotelId__267ABA7A" FromRole="Hotel" ToRole="Room" />
+  </EntityType>
+  <EntityContainer Name="dbHMSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Hotels" EntityType="Self.Hotel" />
+    <EntitySet Name="Rooms" EntityType="dbHMSModel.Room" />
+    <AssociationSet Name="FK__Room__HotelId__267ABA7A" Association="dbHMSModel.FK__Room__HotelId__267ABA7A">
+      <End Role="Hotel" EntitySet="Hotels" />
+      <End Role="Room" EntitySet="Rooms" />
+    </AssociationSet>
+    <EntitySet Name="Bookings" EntityType="dbHMSModel.Booking" />
+    <AssociationSet Name="FK__Booking__Roomid__2A4B4B5E" Association="dbHMSModel.FK__Booking__Roomid__2A4B4B5E">
+      <End Role="Room" EntitySet="Rooms" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HotelId" Type="Int32" />
+    <Property Name="RoomName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RoomCategory" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RoomPrice" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Hotel" Relationship="dbHMSModel.FK__Room__HotelId__267ABA7A" FromRole="Room" ToRole="Hotel" />
+    <Property Name="isActive" Type="Boolean" />
+    <NavigationProperty Name="Bookings" Relationship="dbHMSModel.FK__Booking__Roomid__2A4B4B5E" FromRole="Room" ToRole="Booking" />
+  </EntityType>
+  <Association Name="FK__Room__HotelId__267ABA7A">
+    <End Type="dbHMSModel.Hotel" Role="Hotel" Multiplicity="0..1" />
+    <End Type="dbHMSModel.Room" Role="Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="HotelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Booking">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Roomid" Type="Int32" />
+    <Property Name="BookingDate" Type="DateTime" Precision="0" />
+    <Property Name="StatusOfBooking" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Room" Relationship="dbHMSModel.FK__Booking__Roomid__2A4B4B5E" FromRole="Booking" ToRole="Room" />
+  </EntityType>
+  <Association Name="FK__Booking__Roomid__2A4B4B5E">
+    <End Type="dbHMSModel.Room" Role="Room" Multiplicity="0..1" />
+    <End Type="dbHMSModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="Roomid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

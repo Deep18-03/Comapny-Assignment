@@ -1,0 +1,1019 @@
+{
+	"info": {
+		"_postman_id": "d220c7bf-ea19-400b-9db0-cc326db797b7",
+		"name": "HMS Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44380/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelName\":\"Hyatt Regency Ahmedabad\",\r\n    \"Address\":\"17A, Ashram Road,Ahmedabad\",\r\n    \"City\":\"Ahmedabad\",\r\n    \"PinCode\":38820,\r\n    \"ContactNumber\":\"8230094214\",\r\n    \"CreatedBy\":\"Yash\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelName\":\"Novotel Ahmedabad\",\r\n    \"Address\":\" Next to Wide Angle Cinema, S.G. Highway\",\r\n    \"City\":\"Ahmedabad\",\r\n    \"PinCode\":38820,\r\n    \"ContactPerson\":\"Manager\",\r\n    \"ContactNumber\":\"8223054214\",\r\n    \"CreatedBy\":\"Deep\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelName\":\"DoubleTree by Hilton\",\r\n    \"Address\":\" Ambli Bopal Road, Vikram Nagar \",\r\n    \"City\":\"Anand\",\r\n    \"PinCode\":38820,\r\n    \"ContactPerson\":\"Manager\",\r\n    \"ContactNumber\":\"9233054214\",\r\n    \"CreatedBy\":\"Dev\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelName\":\"Sayaji Hotel\",\r\n    \"Address\":\"Sayaji Hotel,Near Bhimnath Bridge Sayajigunj\",\r\n    \"City\":\"Vadodara\",\r\n    \"PinCode\":38810,\r\n    \"ContactPerson\":\"Manager\",\r\n    \"ContactNumber\":\"9245054214\",\r\n    \"CreatedBy\":\"Deep\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelName\":\"Madhubhan Resort & Spa\",\r\n    \"Address\":\"Anand Sojitra Road,Vallabh Vidyanaga\",\r\n    \"City\":\"Anand\",\r\n    \"PinCode\":38800,\r\n    \"ContactPerson\":\"Manager\",\r\n    \"ContactNumber\":\"9145354214\",\r\n    \"CreatedBy\":\"Yash\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelName\":\"Surat Marriott Hotel \",\r\n    \"Address\":\"Ambika Niketan, Athwa Lines, Surat Dumas Road\",\r\n    \"City\":\"Surat\",\r\n    \"PinCode\":38800,\r\n    \"ContactPerson\":\"Manager\",\r\n    \"ContactNumber\":\"9134354214\",\r\n    \"CreatedBy\":\"Yash\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 7,\r\n    \"RoomName\": \"Premium Grande Room\",\r\n    \"RoomCategory\": \"Categories 1\",\r\n    \"RoomPrice\": 3480,\r\n    \"CreatedBy\": \"Yash\",\r\n    \"isActive\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 7,\r\n    \"RoomName\": \"Suit\",\r\n    \"RoomCategory\": \"Categories 2\",\r\n    \"RoomPrice\": 6080,\r\n    \"CreatedBy\": \"Yash\",\r\n    \"isActive\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 7,\r\n    \"RoomName\": \"Suit-With Two Way Airport transfers\",\r\n    \"RoomCategory\": \"Categories 2\",\r\n    \"RoomPrice\": 7080,\r\n    \"CreatedBy\": \"Yash\",\r\n    \"isActive\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 7,\r\n    \"RoomName\": \"Premium Suit\",\r\n    \"RoomCategory\": \"Categories 3\",\r\n    \"RoomPrice\": 10080,\r\n    \"CreatedBy\": \"Yash\",\r\n    \"isActive\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 8,\r\n    \"RoomName\": \"Studio Suite with Lounge Access\",\r\n    \"RoomCategory\": \"Categories 2\",\r\n    \"RoomPrice\":  3659,\r\n    \"CreatedBy\": \"Deep\",\r\n    \"isActive\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 8,\r\n    \"RoomName\": \"Superior king Room\",\r\n    \"RoomCategory\": \"Categories 3\",\r\n    \"RoomPrice\":  4659,\r\n    \"CreatedBy\": \"Deep\",\r\n    \"isActive\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 8,\r\n    \"RoomName\": \"Premium king Room\",\r\n    \"RoomCategory\": \"Categories 1\",\r\n    \"RoomPrice\":  2659,\r\n    \"CreatedBy\": \"Deep\",\r\n    \"isActive\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 8,\r\n    \"RoomName\": \"Twin king Room\",\r\n    \"RoomCategory\": \"Categories 2\",\r\n    \"RoomPrice\":  4000,\r\n    \"CreatedBy\": \"Deep\",\r\n    \"isActive\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 9,\r\n    \"RoomName\": \"Twin king Room\",\r\n    \"RoomCategory\": \"Categories 2\",\r\n    \"RoomPrice\":  4000,\r\n    \"CreatedBy\": \"John\",\r\n    \"isActive\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 9,\r\n    \"RoomName\": \"Premier king Room\",\r\n    \"RoomCategory\": \"Categories 3\",\r\n    \"RoomPrice\":  5000,\r\n    \"CreatedBy\": \"John\",\r\n    \"isActive\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 9,\r\n    \"RoomName\": \"Twin Room\",\r\n    \"RoomCategory\": \"Categories 1\",\r\n    \"RoomPrice\":  5000,\r\n    \"CreatedBy\": \"John\",\r\n    \"isActive\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 10,\r\n    \"RoomName\": \"Twin Room\",\r\n    \"RoomCategory\": \"Categories 1\",\r\n    \"RoomPrice\":  2000,\r\n    \"CreatedBy\": \"Smith\",\r\n    \"isActive\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 10,\r\n    \"RoomName\": \"Suit Room\",\r\n    \"RoomCategory\": \"Categories 2\",\r\n    \"RoomPrice\":  3000,\r\n    \"CreatedBy\": \"Smith\",\r\n    \"isActive\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 11,\r\n    \"RoomName\": \"Superior king Room\",\r\n    \"RoomCategory\": \"Categories 3\",\r\n    \"RoomPrice\":  5000,\r\n    \"CreatedBy\": \"Anand\",\r\n    \"isActive\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 11,\r\n    \"RoomName\": \"Superior Room\",\r\n    \"RoomCategory\": \"Categories 2\",\r\n    \"RoomPrice\":  4000,\r\n    \"CreatedBy\": \"Anand\",\r\n    \"isActive\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 11,\r\n    \"RoomName\": \"Premium Suit\",\r\n    \"RoomCategory\": \"Categories 1\",\r\n    \"RoomPrice\":  2000,\r\n    \"CreatedBy\": \"Anand\",\r\n    \"isActive\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 12,\r\n    \"RoomName\": \"Premium Suit\",\r\n    \"RoomCategory\": \"Categories 3\",\r\n    \"RoomPrice\":  5000,\r\n    \"CreatedBy\": \"Kevin\",\r\n    \"isActive\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 12,\r\n    \"RoomName\": \"Studio Suite Room\",\r\n    \"RoomCategory\": \"Categories 2\",\r\n    \"RoomPrice\":  3000,\r\n    \"CreatedBy\": \"Kevin\",\r\n    \"isActive\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 12,\r\n    \"RoomName\": \"Suite Room\",\r\n    \"RoomCategory\": \"Categories 1\",\r\n    \"RoomPrice\":  3000,\r\n    \"CreatedBy\": \"Kevin\",\r\n    \"isActive\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"HotelId\": 12,\r\n    \"RoomName\": \"Suite Room\",\r\n    \"RoomCategory\": \"Categories 1\",\r\n    \"RoomPrice\":  3000,\r\n    \"CreatedBy\": \"Kevin\",\r\n    \"isActive\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/hotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room/20",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/room/20",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/room",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Roomid\":\"13\",\r\n    \"BookingDate\":\"2020-11-1\",\r\n    \"StatusOfBooking\":\"Optional\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Roomid\":\"11\",\r\n    \"BookingDate\":\"2020-1-13\",\r\n    \"StatusOfBooking\":\"Optional\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Roomid\":\"12\",\r\n    \"BookingDate\":\"2020-1-16\",\r\n    \"StatusOfBooking\":\"Optional\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Roomid\":\"16\",\r\n    \"BookingDate\":\"2020-1-16\",\r\n    \"StatusOfBooking\":\"Optional\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/booking",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"11\",\r\n    \"BookingDate\":\"2020-1-17\",\r\n    \"StatusOfBooking\":\"Definitive\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/booking",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"12\",\r\n    \"BookingDate\":\"2020-1-19\",\r\n    \"StatusOfBooking\":\"Definitive\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/booking/8",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/booking/8",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"booking",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

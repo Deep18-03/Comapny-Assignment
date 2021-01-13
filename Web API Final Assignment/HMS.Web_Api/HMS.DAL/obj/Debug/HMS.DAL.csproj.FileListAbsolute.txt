@@ -1,0 +1,42 @@
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.DAL.dll
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.DAL.pdb
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.Models.dll
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.Models.pdb
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.csproj.CopyComplete
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.dll
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.pdb
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.DAL.dll.config
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.DAL.dll.config
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.DAL.dll
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.DAL.pdb
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.dll
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.Models.dll
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.Models.pdb
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.xml
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.csprojAssemblyReference.cache
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.csproj.CoreCompileInputs.cache
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.csproj.CopyComplete
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.dll
+C:\Storage Files\Deep\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.pdb
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.DAL.dll.config
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.DAL.dll
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.DAL.pdb
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.dll
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.Models.dll
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\bin\Debug\HMS.Models.pdb
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.xml
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.csprojAssemblyReference.cache
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.csproj.CoreCompileInputs.cache
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.csproj.CopyComplete
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.dll
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.DAL\obj\Debug\HMS.DAL.pdb

@@ -1,0 +1,18 @@
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.Models\bin\Debug\HMS.Models.dll
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.Models\bin\Debug\HMS.Models.pdb
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.dll
+C:\Users\ASUS\source\repos\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.pdb
+C:\Storage Files\Deep\HMS.Web_Api\HMS.Models\bin\Debug\HMS.Models.dll
+C:\Storage Files\Deep\HMS.Web_Api\HMS.Models\bin\Debug\HMS.Models.pdb
+C:\Storage Files\Deep\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.csprojAssemblyReference.cache
+C:\Storage Files\Deep\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.csproj.CoreCompileInputs.cache
+C:\Storage Files\Deep\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.dll
+C:\Storage Files\Deep\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.pdb
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.Models\bin\Debug\HMS.Models.dll
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.Models\bin\Debug\HMS.Models.pdb
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.csprojAssemblyReference.cache
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.csproj.CoreCompileInputs.cache
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.dll
+C:\Storage Files\Deep\webapi assignmanet\HMS.Web_Api\HMS.Models\obj\Debug\HMS.Models.pdb
